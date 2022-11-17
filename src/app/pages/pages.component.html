@@ -1,21 +1,17 @@
-
-
-
 <div id="main-wrapper">
+  <app-header></app-header>
 
-    <app-header></app-header>
+  <app-sidebar></app-sidebar>
 
-    <app-sidebar></app-sidebar>
+  <div class="page-wrapper">
+    <div class="container-fluid">
+      <!-- Breadcrumbs -->
+      <app-breadcrumbs></app-breadcrumbs>
 
-    <div class="page-wrapper">
-        <div class="container-fluid">
-            <!-- Breadcrumbs -->
-            <app-breadcrumbs></app-breadcrumbs>
+      <!-- Mi sistema de rutas -->
+      <router-outlet></router-outlet>
 
-            <!-- Mi sistema de rutas -->
-            <router-outlet></router-outlet>
-
-            <!--
+      <!--
               <div class="row">
                 <div class="col-12">
                     <div class="card">
@@ -26,21 +22,16 @@
                 </div>
             </div>
           -->
-
-        </div>
-
-        <!-- ============================================================== -->
-        <!-- footer -->
-        <!-- ============================================================== -->
-        <footer class="footer">
-            © 20xx Admin Pro by wrappixel.com
-        </footer>
-        <!-- ============================================================== -->
-        <!-- End footer -->
-        <!-- ============================================================== -->
-
     </div>
 
-
+    <!-- ============================================================== -->
+    <!-- footer -->
+    <!-- ============================================================== -->
+    <footer class="footer">© 20xx Admin Pro by wrappixel.com</footer>
+    <!-- ============================================================== -->
+    <!-- End footer -->
+    <!-- ============================================================== -->
+  </div>
 </div>
 
+<app-modal-imagen></app-modal-imagen>
